@@ -1,8 +1,10 @@
-.container {
-    border-right: 1px solid black;
-}
+
 
 /*-------------- NAVIGATION -------- */
+
+header {
+    margin-bottom: 10px;
+}
 
 .logo img{
     display: block;
@@ -21,4 +23,14 @@
 .navlinks li {
     display: inline-block;
     margin-right: 1rem;
+}
+
+.navlinks a {
+    color: black;
+}
+
+/*-------------- SECTIONS -------- */
+
+h1 {
+    text-align: center;
 }
