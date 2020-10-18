@@ -6,6 +6,10 @@
     width: 200px;
 }
 
+.jumbotron {
+    margin-bottom: 0;
+}
+
 
 
 /* header {
