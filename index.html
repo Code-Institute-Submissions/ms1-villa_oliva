@@ -15,30 +15,29 @@
         <div class="hero-image">
             <div class="hero-text">
                 <img class="hero-logo" src="assets/logo/villaoliva_logo_small.png" alt="hero image logo">
-                <p>Your piece of the Adriatic</p>
+                <p>Your Piece of the Adriatic</p>
             </div>
-
         </div>
 
         
     </header>
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="assets/logo/villaoliva_logo_small.jpg" id="logo-image" alt="villa oliva logo"></a>
+        <a class="navbar-brand" href="#"><img src="assets/logo/villaoliva_logo_small.png" id="logo-image" alt="villa oliva logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggler">
             <span class="navbar-toggler-icon"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbartoggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Villa Oliva</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Amenities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Book Now!</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#villa_oliva">Villa Oliva</a></li>
+                <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="#book_now">Book Now!</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
+    <section class="container">
         <div class="row">
             <div class="col">
                 <h1>Carousel</h1>
@@ -46,7 +45,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="villa_oliva">
         <div class="row">
             <div class="col">
                 <h1>Villa Oliva</h1>
@@ -62,34 +61,58 @@
                     floor, there is a large open living and dining area, small contemporary kitchen and a shower/toilet.
                     There is also a covered patio and an open terrace with a dining table and barbecue.
                 </p>
-                <p>
-                    On the first floor, there are two bedrooms, one of which has a double bed and the other, two single
-                    beds. In addition, there is a shared shower/toilet and a short corridor leading to a south oriented
-                    smaller terrace. The terrace features a solar shower, deck chairs and parasol where you can enjoy
-                    the sun throughout the day.
-                    The third bedroom is situated in the attic, together with a small gallery accommodating an
-                    additional single bed. The gallery can be used as a TV and play room, it is equipped with a lot of
-                    books (English & Croatian language), board games and DVD movies. There is also a small balcony with
-                    a view of the Karavaja hill and church tower.
-                </p>
-                <p>
-                    Since the Forsek family spent almost 17 years living in the Middle East, you can find a slight touch
-                    of the orient in the house furnishing and decoration. If you like, you can experience the oriental
-                    atmosphere drinking tea and smoking argileh in the late afternoon.
-                    Villa Oliva is a comfortable and intimate place for leisure, filled with plenty of light and sun.
-                    Its position in the town centre allows easy access to shops, post office, exchange office, pharmacy,
-                    doctor, cafes & restaurants etc.
-                    It is equipped with all facilities required in the 3 star*** category such as wireless Internet, LCD
-                    TV, air conditioning, dishwasher, washing machine, open grill for barbecue, outside shower,
-                    deck-chairs, parasol, dining tables and chairs.
-                    Considering the street is pedestrian zone only, parking is available on the squares at each end of
-                    the street and costs around 20 EUR per week.
-                </p>
+                <button type="button" class="btn" data-toggle="modal" data-target="#villa_oliva">Read More</button>
+                <div class="modal" id="villa_oliva">
+                    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Villa Oliva</h2>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-photo" src="assets/img/vo_outside.jpg" alt="Villa Oliva photo of exterior">
+                                <p>
+                                    ‘Villa Oliva’ is situated in a narrow, cobblestoned street on the island part of Tisno. The Forsek
+                                    family rediscovered this 18th century house in 2004. A lot of thought and heart was put into the
+                                    restoration of this property to make it look authentic, yet extremely comfortable. Although, only
+                                    the outer stone walls remain of the old house, the restoration preserved its original features. The
+                                    hidden treasure of the house is its secluded inner courtyard surrounded by stone walls which ensure
+                                    privacy and tranquillity.
+                                    The total surface area of the house is around 130 square metres spread over 3 floors. On the ground
+                                    floor, there is a large open living and dining area, small contemporary kitchen and a shower/toilet.
+                                    There is also a covered patio and an open terrace with a dining table and barbecue.
+                                </p>
+                                <p>
+                                    On the first floor, there are two bedrooms, one of which has a double bed and the other, two single
+                                    beds. In addition, there is a shared shower/toilet and a short corridor leading to a south oriented
+                                    smaller terrace. The terrace features a solar shower, deck chairs and parasol where you can enjoy
+                                    the sun throughout the day.
+                                    The third bedroom is situated in the attic, together with a small gallery accommodating an
+                                    additional single bed. The gallery can be used as a TV and play room, it is equipped with a lot of
+                                    books (English & Croatian language), board games and DVD movies. There is also a small balcony with
+                                    a view of the Karavaja hill and church tower.
+                                </p>
+                                <p>
+                                    Since the Forsek family spent almost 17 years living in the Middle East, you can find a slight touch
+                                    of the orient in the house furnishing and decoration. If you like, you can experience the oriental
+                                    atmosphere drinking tea and smoking argileh in the late afternoon.
+                                    Villa Oliva is a comfortable and intimate place for leisure, filled with plenty of light and sun.
+                                    Its position in the town centre allows easy access to shops, post office, exchange office, pharmacy,
+                                    doctor, cafes & restaurants etc.
+                                    It is equipped with all facilities required in the 3 star*** category such as wireless Internet, LCD
+                                    TV, air conditioning, dishwasher, washing machine, open grill for barbecue, outside shower,
+                                    deck-chairs, parasol, dining tables and chairs.
+                                    Considering the street is pedestrian zone only, parking is available on the squares at each end of
+                                    the street and costs around 20 EUR per week.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="amenities">
         <div class="row">
             <div class="col">
                 <h1>Amenities</h1>
@@ -107,7 +130,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="location">
         <div class="row">
             <div class="col">
                 <h1>Location</h1>
@@ -121,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="book_now">
         <div class="row">
             <div class="col">
                 <h1>Book Now!</h1>
@@ -129,7 +152,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="contact">
         <div class="row">
             <div class="col">
                 <h1>Contact Us</h1>
@@ -141,6 +164,7 @@
     <footer>
 
     </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
