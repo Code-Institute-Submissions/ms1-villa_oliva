@@ -66,9 +66,14 @@ p {
     width: 20%;
     height: auto;
     float: left;
-    margin: 10px;
+    margin: 20px;
 }
 
+/*-------------- GALLERY -------- */
+
+.carousel-container, .carousel-item {
+    height: 75vh;
+}
 
 /*-------------- AMENITIES -------- */
 
