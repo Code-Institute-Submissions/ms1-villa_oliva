@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <title>Villa Oliva</title>
 </head>
 
 <body>
     <header>
-        
+
         <!-- Hero image of tisno with Logo overlay and hero text -->
-        
+
         <div class="hero-image">
             <div class="hero-text">
                 <img class="hero-logo" src="assets/logo/villaoliva_logo_small.png" alt="hero image logo">
-                <p>Your Piece of the Adriatic</p>
+                <p>Experience the tranquillity of the Adriatic</p>
             </div>
         </div>
     </header>
@@ -42,17 +45,17 @@
             </ul>
         </div>
     </nav>
-    
-    
+
+
     <!-- GALLERY    - Gallery section containing carousel of images with an option to open modal to full gallery -->
-    
+
     <section class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Carousel</h1>
-                <p class="subtitle"><small><a href="#">See full gallery</a></small></p>
-            </div>
-        </div>
+        <h1><span class="h1-left">
+                <img src="assets/img/olive-branch-left.png" alt="">
+            </span>Gallery<span class="h1-right">
+                <img src="assets/img/olive-branch-right.png" alt="">
+            </span></h1>
+        <hr>
 
 
         <!-- Carousel containing images of Villa Oliva -->
@@ -80,13 +83,21 @@
             </div>
         </div>
     </section>
-   
+
     <!-- VILLA OLIVA    - Information about Villa Oliva / About the house / history / house rules / etc -->
-    
+
     <section class="container" id="villa_oliva">
         <div class="row">
             <div class="col">
-                <h1>Villa Oliva</h1>
+                <h1>
+                    <div class="h1-left">
+                        <img src="assets/img/olive-branch-left.png" alt="">
+                    </div>
+                    Villa Oliva
+                    <div class="h1-right">
+                        <img src="assets/img/olive-branch-right.png" alt="">
+                    </div>
+                </h1>
                 <hr>
                 <p>
                     ‘Villa Oliva’ is situated in a narrow, cobblestoned street on the island part of Tisno. The Forsek
@@ -99,12 +110,15 @@
                     floor, there is a large open living and dining area, small contemporary kitchen and a shower/toilet.
                     There is also a covered patio and an open terrace with a dining table and barbecue.
                 </p>
-                
+
                 <!---Modal for extra content relating to Villa Oliva -->
-                
-                <button type="button" class="btn" data-toggle="modal" data-target="#modal_villa_oliva">Read More</button>
+                <div class="center-button">
+                    <button type="button" class="btn btn-read-more" data-toggle="modal"
+                        data-target="#modal_villa_oliva">Read
+                        more...</button>
+                </div>
                 <div class="modal fade" role="dialog" id="modal_villa_oliva">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2>Villa Oliva</h2>
@@ -166,6 +180,7 @@
                                     Considering the street is pedestrian zone only, parking is available on the squares
                                     at each end of
                                     the street and costs around 20 EUR per week.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -174,36 +189,72 @@
         </div>
         </div>
     </section>
-    
+
     <!-- AMENITIES   - Information about amenities available to guests -->
-    
+
     <section class="container" id="amenities">
+        <h1>
+            <div class="h1-left">
+                <img src="assets/img/olive-branch-left.png" alt="">
+            </div>
+            Amenities <div class="h1-right">
+                <img src="assets/img/olive-branch-right.png" alt="">
+            </div>
+        </h1>
+        <hr>
         <div class="row">
             <div class="col">
-                <h1>Amenities</h1>
-                <hr>
+                <p class="p-center">
+                    Villa Oliva has all the modern conveniences and amentities you would need for a relaxing holiday.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <ul class="amenities-list">
-                    <li>Parking</li>
-                    <li>Terrace</li>
-                    <li>Free WiFi</li>
-                    <li>Cable TV</li>
-                    <li>Washer & Dryer</li>
-                    <li>Spa</li>
-                    <li>Air Conditioning</li>
-                    <li>Kitchen</li>
+                    <li><i class="fas fa-parking"></i> Parking</li>
+                    <li><i class="fas fa-sun"></i> Terrace</li>
+                    <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                    <li><i class="fas fa-tv"></i> Cable TV</li>
+                    <li><i class="fas fa-tshirt"></i> Washer & Dryer</li>
+                    <li><i class="fas fa-spa"></i> Spa</li>
+                    <li><i class="fas fa-fan"></i> Air Conditioning</li>
+                    <li><i class="fas fa-sink"></i> Kitchen</li>
                 </ul>
             </div>
         </div>
     </section>
-   
-   <!-- LOCATION   - Location of the house and some points of interest in Tisno and further / Explanation how to get to house from 
+
+    <!-- LOCATION   - Location of the house and some points of interest in Tisno and further / Explanation how to get to house from 
         Airport / Zagreb / Split -->
 
     <section class="container" id="location">
+        <h1>
+            <div class="h1-left">
+                <img src="assets/img/olive-branch-left.png" alt="">
+            </div>
+            Location <div class="h1-right">
+                <img src="assets/img/olive-branch-right.png" alt="">
+            </div>
+        </h1>
+        <hr>
+
         <div class="row">
             <div class="col">
-                <h1>Location</h1>
-                <hr>
+                <p class="p-center">
+                    Villa Oliva is located in a small town of Tisno on the island of Murter in Croatia.
+                    While Villa Oliva is a self contained island of tranquility in the center of the town, there are
+                    many points of interest around the villa. While here, you can visit great restaurants, museums,
+                    islands and national parks. All within a short drive or ferry ride.
+                </p>
+            </div>
+        </div>
+        <!--In this row:
+                        Left column = responsive google map
+                        Right column = links to more content which open in a modal-->
+
+        <div class="row">
+            <div class="col-8 col-md-9 col-lg-10">
                 <div class="google-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9969.905855034214!2d15.637153722465916!3d43.800057198510856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe93afa256f830430!2sVilla%20Oliva!5e0!3m2!1sen!2sie!4v1602745786436!5m2!1sen!2sie"
@@ -211,36 +262,75 @@
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
+            <div class="col-4 col-md-3 col-lg-2">
+                <h5><a href="#" type="button">Tisno</a></h5>
+                <h5>Local POI</h5>
+                <h5>Directions</h5>
+            </div>
         </div>
+
     </section>
-    
+
     <!-- BOOK NOW! - Call to action to book at Villa Oliva. The first version of the site will link to AirBnB to book stay. 
             Subsequent versions may add option to book directly thorugh the website-->
-    
+
     <section class="container" id="book_now">
         <div class="row">
             <div class="col">
-                <h1>Book Now!</h1>
+                <h1>
+                    <div class="h1-left">
+                        <img src="assets/img/olive-branch-left.png" alt="">
+                    </div>
+                    Book Now!
+                    <div class="h1-right">
+                        <img src="assets/img/olive-branch-right.png" alt="">
+                    </div>
+                </h1>
                 <hr>
             </div>
         </div>
     </section>
-    
+
+
+
     <!-- CONTACT US   - Section to contact the owner / manager of Villa Oliva for further information -->
 
     <section class="container" id="contact">
+        <h1>
+
+            <div class="h1-left">
+                <img src="assets/img/olive-branch-left.png" alt="">
+            </div>
+            Contact Us
+            <div class="h1-right">
+                <img src="assets/img/olive-branch-right.png" alt="">
+            </div>
+
+        </h1>
+        <hr>
         <div class="row">
             <div class="col">
-                <h1>Contact Us</h1>
-                <hr>
+                <p class="p-center">
+                    If you have any questions or need any information about Villa Oliva, Tisno, Croatia or anything,
+                    please let us know using the form below and we will get back to you in the earliest possible time.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- FOOTER  - Contact information and Social Media Links -->
 
-    <footer>
-
+    <footer class="container-fluid bg-light">
+        <div class="row">
+            <hr>
+            <div class="col-6 col-sm-3">Villa Oliva <br>
+                Uska ulica 8 <br>
+                22240 TISNO <br>
+                Croatia
+            </div>
+            <div class="col-6 col-sm-6">Social Media Links</div>
+            <div class="col col-sm-3">Copyright info</div>
+        </div>
     </footer>
 
 
