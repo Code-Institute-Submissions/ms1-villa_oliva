@@ -113,15 +113,15 @@
 
                 <!---Modal for extra content relating to Villa Oliva -->
                 <div class="center-button">
-                    <button type="button" class="btn btn-read-more" data-toggle="modal"
+                    <button type="button" class="btn" data-toggle="modal"
                         data-target="#modal_villa_oliva">Read
                         more...</button>
                 </div>
-                <div class="modal fade" role="dialog" id="modal_villa_oliva">
-                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal fade" role="dialog" id="modal_villa_oliva" >
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2>Villa Oliva</h2>
+                                <h2 class="modal-title">Villa Oliva</h2>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
@@ -253,8 +253,15 @@
                         Left column = responsive google map
                         Right column = links to more content which open in a modal-->
 
-        <div class="row">
-            <div class="col-8 col-md-9 col-lg-10">
+        <div class="row justify-content-center">
+            <div class="col-12 location-links">
+                <ul>
+                    <li><button class="btn">Tisno</button></li>
+                    <li><button class="btn">Local POI</button></li>
+                    <li><button class="btn">Directions</button></li>
+                </ul>
+            </div>            
+            <div class="col-12 col-lg-9">
                 <div class="google-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9969.905855034214!2d15.637153722465916!3d43.800057198510856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe93afa256f830430!2sVilla%20Oliva!5e0!3m2!1sen!2sie!4v1602745786436!5m2!1sen!2sie"
@@ -262,11 +269,7 @@
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-            <div class="col-4 col-md-3 col-lg-2">
-                <h5><a href="#" type="button">Tisno</a></h5>
-                <h5>Local POI</h5>
-                <h5>Directions</h5>
-            </div>
+        
         </div>
 
     </section>
@@ -297,7 +300,6 @@
 
     <section class="container" id="contact">
         <h1>
-
             <div class="h1-left">
                 <img src="assets/img/olive-branch-left.png" alt="">
             </div>
@@ -305,18 +307,25 @@
             <div class="h1-right">
                 <img src="assets/img/olive-branch-right.png" alt="">
             </div>
-
         </h1>
         <hr>
+        <p class="p-center">
+            If you have any questions or need any information about Villa Oliva, Tisno, Croatia or anything,
+            please let us know using the form below and we will get back to you in the earliest possible time.
+        </p>
         <div class="row">
             <div class="col">
-                <p class="p-center">
-                    If you have any questions or need any information about Villa Oliva, Tisno, Croatia or anything,
-                    please let us know using the form below and we will get back to you in the earliest possible time.
-                </p>
+
             </div>
         </div>
     </section>
+
+    <div class="book-now">
+        <button type="button" class="btn btn-lg btn-warning"><a
+                href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=91444bd5-60d0-445c-9827-13eb474dabc3"
+                target="_blank">Book
+                Now!</a></button>
+    </div>
 
     <!-- FOOTER  - Contact information and Social Media Links -->
 
