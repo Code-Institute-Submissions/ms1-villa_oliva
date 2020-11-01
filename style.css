@@ -68,7 +68,7 @@ p {
 }
 
 .hero-text p{
-    color: #000000;
+    c olor: #000000;
     text-align: center;
     font-size: 200%;
     font-weight: bolder;
@@ -88,6 +88,11 @@ p {
 
 .center-button {
     text-align: center;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 20px;
 }
 
 /*-------------- GALLERY -------- */
