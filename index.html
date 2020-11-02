@@ -117,7 +117,7 @@
                         data-target="#modal_villa_oliva">Read
                         more...</button>
                 </div>
-                <div class="modal fade" role="dialog" id="modal_villa_oliva" >
+                <div class="modal fade" role="dialog" id="modal_villa_oliva">
                     <div class="modal-dialog modal-dialog-scrollable modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -259,11 +259,14 @@
         <div class="row justify-content-center">
             <div class="col-12 location-links">
                 <ul>
-                    <li><button type="button" class="btn btn-light" data-toggle="modal" data-target="#tisnoModal">Tisno</button></li>
-                    <li><button type="button" class="btn btn-light" data-toggle="modal" data-target="#localpoiModal">Local POI</button></li>
-                    <li><button type="button" class="btn btn-light" data-toggle="modal" data-target="#directionsModal">Directions</button></li>
+                    <li><button type="button" class="btn btn-light" data-toggle="modal"
+                            data-target="#tisnoModal">Tisno</button></li>
+                    <li><button type="button" class="btn btn-light" data-toggle="modal"
+                            data-target="#localpoiModal">Local POI</button></li>
+                    <li><button type="button" class="btn btn-light" data-toggle="modal"
+                            data-target="#directionsModal">Directions</button></li>
                 </ul>
-            </div>            
+            </div>
             <div class="col-12 col-lg-9">
                 <div class="google-map">
                     <iframe
@@ -272,7 +275,7 @@
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-        
+
         </div>
 
         <!--LOCATION MODALS - Below are the modals refered to in the location unordered list buttons -->
@@ -353,6 +356,25 @@
                 <hr>
             </div>
         </div>
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="google-map">
+
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=N2N0dGNxNjd1cm9mYjlwNzV0ajVnamJpMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uY3JvYXRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23EF6C00&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0"
+                            style="border:solid 1px #777" width="800" height="600" frameborder="0"
+                            scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-6">
+                    <div class="jumbotron">
+                        <h2>Check availability</h2>
+                        <p>If your dates are available then...</p>
+                        <button class="btn btn-lg btn-warning">Book Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -376,9 +398,40 @@
         </p>
         <div class="row">
             <div class="col">
+                <form action="#" method="GET" id="contactform">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input class="form-control" type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="query">Question</label>
+                        <textarea class="form-control" rows="4" id="query" name="query"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
+
+
+        <!-- <div class="modal fade" id="thanksModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Thank you for submitting your question</h3>
+                        <p>We really appreciate your question and we will ensure to get back to you as soon as possible.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
     </section>
 
     <div class="book-now">

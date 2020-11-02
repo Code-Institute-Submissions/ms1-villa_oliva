@@ -133,6 +133,7 @@ p {
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .google-map iframe {
@@ -170,6 +171,17 @@ p {
     right: 20px;
     z-index: 100;
 
+}
+
+.jumbotron {
+    height: 100%;
+}
+
+
+/*-------------- CONTACT -------- */
+
+form {
+    margin-bottom: 20px;
 }
 
 
