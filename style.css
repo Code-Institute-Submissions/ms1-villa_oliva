@@ -45,7 +45,7 @@ p {
 .hero-image {
     margin: 0;
     padding: 0;
-    height: 30vh;
+    height: 55vh;
     background-image: url("assets/img/hero-image_c.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -76,6 +76,10 @@ p {
     text-decoration: underline;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #386A38;
+    font-weight: bold;
+}
 
 /*-------------- MODALS -------- */
 
@@ -207,6 +211,18 @@ footer {
     .location-links ul li {
         margin: 0 5px 10px 0;
     }
+
+    .hero-image {
+        margin: 0;
+        padding: 0;
+        height: 30vh;
+        background-image: url("assets/img/hero-image_c.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     }
 
 @media (max-width: 460px){

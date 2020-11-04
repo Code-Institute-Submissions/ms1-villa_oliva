@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <title>Villa Oliva</title>
 </head>
 
@@ -29,7 +30,7 @@
     <!--Navigation bar containing logo and nav links. The bar is sticky and will be fixed to top when scrolling -->
 
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="assets/logo/villaoliva_logo_small.png" id="logo-image"
+        <a class="navbar-brand" href="#villa_oliva"><img src="assets/logo/villaoliva_logo_small.png" id="logo-image"
                 alt="villa oliva logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggler">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +38,7 @@
 
         <div class="collapse navbar-collapse" id="navbartoggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#villa_oliva">Villa Oliva</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
                 <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
                 <li class="nav-item"><a class="nav-link" href="#book_now">Book Now!</a></li>
@@ -46,43 +47,6 @@
         </div>
     </nav>
 
-
-    <!-- GALLERY    - Gallery section containing carousel of images with an option to open modal to full gallery -->
-
-    <section class="container">
-        <h1><span class="h1-left">
-                <img src="assets/img/olive-branch-left.png" alt="">
-            </span>Gallery<span class="h1-right">
-                <img src="assets/img/olive-branch-right.png" alt="">
-            </span></h1>
-        <hr>
-
-
-        <!-- Carousel containing images of Villa Oliva -->
-        <div class="carousel-container">
-            <div id="gallerycontrols" class="carousel slide" data-ride="carousel" data-interval="5000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="assets/img/vo_iron_gate.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/img/vo_terrace_downstairs.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/img/vo_living_room1.jpg" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#gallerycontrols" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#gallerycontrols" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- VILLA OLIVA    - Information about Villa Oliva / About the house / history / house rules / etc -->
 
@@ -192,6 +156,46 @@
         </div>
         </div>
     </section>
+
+
+
+    <!-- GALLERY    - Gallery section containing carousel of images with an option to open modal to full gallery -->
+
+    <section class="container" id="gallery">
+        <h1><span class="h1-left">
+                <img src="assets/img/olive-branch-left.png" alt="">
+            </span>Gallery<span class="h1-right">
+                <img src="assets/img/olive-branch-right.png" alt="">
+            </span></h1>
+        <hr>
+
+
+        <!-- Carousel containing images of Villa Oliva -->
+        <div class="carousel-container">
+            <div id="gallerycontrols" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/img/vo_iron_gate.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/vo_terrace_downstairs.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/vo_living_room1.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#gallerycontrols" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gallerycontrols" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- AMENITIES   - Information about amenities available to guests -->
 
@@ -356,24 +360,23 @@
                 <hr>
             </div>
         </div>
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-6">
-                    <div class="google-map">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="google-map">
 
-                        <iframe
-                            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=N2N0dGNxNjd1cm9mYjlwNzV0ajVnamJpMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uY3JvYXRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23EF6C00&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0"
-                            style="border:solid 1px #777" width="800" height="600" frameborder="0"
-                            scrolling="no"></iframe>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-6">
-                    <div class="jumbotron">
-                        <h2>Check availability</h2>
-                        <p>If your dates are available then...</p>
-                        <button class="btn btn-lg btn-warning">Book Now!</button>
-                    </div>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=N2N0dGNxNjd1cm9mYjlwNzV0ajVnamJpMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uY3JvYXRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23EF6C00&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0"
+                        style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
+            <div class="col-12 col-md-4 col-lg-6">
+                <div class="jumbotron">
+                    <h2>Check availability</h2>
+                    <p>If your dates are available then...</p>
+                    <button class="btn btn-lg btn-warning">Book Now!</button>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
