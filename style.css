@@ -6,10 +6,11 @@ section {
     padding-top: 30px;
 }
 
-h1 {
+h1, h5 {
     text-align: center;
     margin-top: 20px;
 }
+
 
 p {
     text-align: justify;
@@ -39,7 +40,7 @@ p {
 /*-------------- HEADER & NAVIGATION -------- */
 
 #logo-image {
-    width: 200px;
+    width: 150px;
 }
 
 .hero-image {
@@ -60,7 +61,7 @@ p {
 }
 
 .hero-logo {
-    width: 50%;
+    width: 45%;
     margin: 0;
     padding: 0;
     display: block;
@@ -112,23 +113,55 @@ p {
 /*-------------- AMENITIES -------- */
 
 .amenities-list {
-    display: block;
+    display: inline-block;
     list-style: none;
     margin: 0 auto;
-    width: fit-content;
+    padding: 0;
+    width: 100%;
     font-size: 1.2rem;
     text-align: center;
 }
 
 .amenities-list li {
     display: inline-block;
-    margin-right: 20px;
+    margin: 20px;
+}
+
+.amenities-list li p{
+    text-align: center;
 }
 
 .amenities-list i {
-    font-size: 1.2rem;
+    font-size: 3rem;
 }
 
+.fa-parking {
+    color: blue;
+}
+
+.fa-sun {
+    color: orange;
+}
+
+.fa-tshirt {
+    color: red;
+}
+
+.fa-spa {
+    color: aquamarine;
+}
+
+.fa-wifi {
+    color: gray;
+}
+
+.fa-sink {
+    color: #386A38;
+}
+
+.fa-tv {
+    color: burlywood;
+}
 
 /*-------------- LOCATION -------- */
 
@@ -221,6 +254,17 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+    }
+
+    .modal-photo {
+        width: 100%;
+        margin: 0 0 20px 0;
+
+    }
+
+    .amenities-list li {
+        display: block;
+        margin: 20px;
     }
 
     }
