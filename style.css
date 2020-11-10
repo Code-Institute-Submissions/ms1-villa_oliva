@@ -165,7 +165,9 @@ p {
 
 /*-------------- LOCATION -------- */
 
-.google-map {
+
+/*code for responsive iframe taken from webpage "How to make Google Maps Embeds Responsive" from "https://www.labnol.org/internet/embed-responsive-google-maps/28333/" */
+.responsive-iframe {
     position: relative;
     padding-bottom: 75%;
     height: 0;
@@ -173,7 +175,9 @@ p {
     margin-bottom: 20px;
 }
 
-.google-map iframe {
+
+/*code for responsive iframe taken from webpage "How to make Google Maps Embeds Responsive" from "https://www.labnol.org/internet/embed-responsive-google-maps/28333/" */
+.responsive-iframe iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -274,3 +278,4 @@ footer {
         display: none;
     }
 }
+
