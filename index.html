@@ -290,6 +290,12 @@
                     many points of interest around the villa. While here, you can visit great restaurants, museums,
                     islands and national parks. All within a short drive or ferry ride.
                 </p>
+                <p class="p-center">
+                    Tisno is a small town on the Dalmatian coast in Croatia. Half of the town is located on the mainland
+                    and the second half is on the island, Murter. The two halfs of the town are connected by a bridge
+                    over the narrow straight. The bridge raises twice a day to let boats pass through the straight which
+                    is a tourist attraction in itself.
+                </p>
             </div>
         </div>
         <!--In this row:
@@ -329,7 +335,37 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <p>Directions to Villa Oliva</p>
+                        <div class="accordion" id="poi-accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingone">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#tisno-bridge" aria-expanded="true" aria-controls="tisno-bridge">
+                                            Tisno bridge
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="tisno-bridge" class="collapse show" aria-labelledby="headingone" data-parent="#poi-accordion">
+                                    <div class="card-body">
+                                        This is the tisno bridge
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingtwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#tisno-kornati" aria-expanded="true" aria-controls="tisno-bridge">
+                                            Kornati
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="tisno-kornati" class="collapse" aria-labelledby="headingtwo" data-parent="poi-accordion">
+                                    <div class="card-body">
+                                        Kornati
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -490,7 +526,8 @@
     <footer class="container-fluid bg-dark">
         <div class="row">
             <div class="col-10 col-sm-9 col-md-8">
-                <div class="col-6 col-sm-3">Villa Oliva <br>
+                <div class="col-6 col-sm-3">
+                    Villa Oliva <br>
                     Uska ulica 8 <br>
                     22240 TISNO <br>
                     Croatia
