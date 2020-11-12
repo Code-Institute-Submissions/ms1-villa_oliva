@@ -339,13 +339,16 @@
                             <div class="card">
                                 <div class="card-header" id="headingone">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#tisno-bridge" aria-expanded="true" aria-controls="tisno-bridge">
+                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                            data-target="#tisno-bridge" aria-expanded="true"
+                                            aria-controls="tisno-bridge">
                                             Tisno bridge
                                         </button>
                                     </h2>
                                 </div>
 
-                                <div id="tisno-bridge" class="collapse show" aria-labelledby="headingone" data-parent="#poi-accordion">
+                                <div id="tisno-bridge" class="collapse show" aria-labelledby="headingone"
+                                    data-parent="#poi-accordion">
                                     <div class="card-body">
                                         This is the tisno bridge
                                     </div>
@@ -354,12 +357,15 @@
                             <div class="card">
                                 <div class="card-header" id="headingtwo">
                                     <h2 class="mb-0">
-                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#tisno-kornati" aria-expanded="true" aria-controls="tisno-bridge">
+                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                            data-target="#tisno-kornati" aria-expanded="true"
+                                            aria-controls="tisno-bridge">
                                             Kornati
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="tisno-kornati" class="collapse" aria-labelledby="headingtwo" data-parent="poi-accordion">
+                                <div id="tisno-kornati" class="collapse" aria-labelledby="headingtwo"
+                                    data-parent="poi-accordion">
                                     <div class="card-body">
                                         Kornati
                                     </div>
@@ -466,11 +472,11 @@
             please let us know using the form below and we will get back to you in the earliest possible time.
         </p>
         <div class="row justify-content-center">
-            <div class="col-12 col-xl-6">
+            <div class="col-10 col-xl-8">
                 <form action="#" method="POST" id="contactform">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input class="form-control" type="text" id="name" name="name">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -488,16 +494,9 @@
         </div>
 
 
-        <!--This script only shows the modal if form submit is successfull. It was taken from StackOverflow at "https://stackoverflow.com/questions/34362470/load-modal-after-form-submit#:~:text=submit()%3B%20%2F%2F%20use%20the,button%20to%20open%20the%20modal.&text=Maybe%20you%20should%20send%20form,have%20to%20refresh%20your%20page."-->
 
-        <script>window.onpageshow = function () {
-                if (typeof window.performance != "undefined"
-                    && window.performance.navigation.type === 0) {
-                    $('#thankyouModal').modal('show');
-                }
-            }</script>
 
-        <!-- Modal to thank customers for sending a question in the form-->
+        <!-- Modal to thank customers for sending a question in the form
         <div class="modal fade" id="thankyouModal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -511,7 +510,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </section>
 
@@ -524,16 +523,30 @@
     <!-- FOOTER  - Contact information and Social Media Links -->
 
     <footer class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-10 col-sm-9 col-md-8">
-                <div class="col-6 col-sm-3">
-                    Villa Oliva <br>
-                    Uska ulica 8 <br>
-                    22240 TISNO <br>
-                    Croatia
+        <div class="row justify-content-center footer-row">
+            <div class="col-9 col-xl-7">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-white">
+                        <p class="footer-address">
+                        Villa Oliva, <span class="d-none d-md-inline"><br></span>
+                        Uska ulica 8, <span class="d-none d-md-inline"><br></span>
+                        22240 TISNO, <span class="d-none d-md-inline"><br></span>
+                        Croatia
+                    </p>
+                    <p class="footer-address">
+                        Tel: +385 91 505 0742 <span class="d-inline d-md-none">|</span><span class="d-none d-md-inline"><br></span>
+                        Email: vesna.forsek@gmail.com
+                    </p>
+                    </div>
+                    <div class="col-12 col-md-6 my-auto">
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/VillaOlivaTisno/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=80a89749-1784-4d59-9def-6d99eb9a6263" target="_blank"><i class="fab fa-airbnb"></i></a></li>
+                            <li><a href="https://www.instagram.com/explore/tags/tisno%F0%9F%87%AD%F0%9F%87%B7/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-white text-center footer-copyright">Copyright 2020 <a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=91444bd5-60d0-445c-9827-13eb474dabc3">Villa Oliva</a></div>
                 </div>
-                <div class="col-6 col-sm-6">Social Media Links</div>
-                <div class="col col-sm-3">Copyright info</div>
             </div>
         </div>
     </footer>
