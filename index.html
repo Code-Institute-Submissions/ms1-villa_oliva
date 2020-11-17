@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -81,7 +81,8 @@
                 <div class="center-button">
                     <button type="button" class="btn btn-warning" data-toggle="modal"
                         data-target="#modal_villa_oliva">Read
-                        more...</button>
+                        more...
+                    </button>
                 </div>
                 <div class="modal fade" role="dialog" id="modal_villa_oliva">
                     <div class="modal-dialog modal-dialog-scrollable modal-lg">
@@ -90,7 +91,7 @@
                                 <h2 class="modal-title">Villa Oliva</h2>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
+                            <article class="modal-body">
                                 <img class="modal-photo" src="assets/img/vo_outside.jpg"
                                     alt="Villa Oliva photo of exterior">
                                 <p>
@@ -129,7 +130,7 @@
                                     at each end of
                                     the street and costs around 20 EUR per week.
                                 </p>
-                            </div>
+                            </article>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
@@ -232,8 +233,8 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col col-md-12">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-12">
                 <ul class="amenities-list">
                     <li><i class="fas fa-parking"></i>
                         <p>Parking</p>
@@ -249,7 +250,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col col-md-12">
+            <div class="col-6 col-md-4 col-lg-12">
                 <ul class="amenities-list">
                     <li><i class="fas fa-tshirt"></i>
                         <p>Washer & Dryer</p>
@@ -298,9 +299,7 @@
                 </p>
             </div>
         </div>
-        <!--In this row:
-                        Left column = responsive google map
-                        Right column = links to more content which open in a modal-->
+        <!--Responsive google map and links to more content which open in a modal-->
 
         <div class="row justify-content-center">
             <div class="col-12 location-links">
@@ -350,7 +349,17 @@
                                 <div id="tisno-bridge" class="collapse show" aria-labelledby="headingone"
                                     data-parent="#poi-accordion">
                                     <div class="card-body">
-                                        This is the tisno bridge
+                                        <img src="assets/img/tisno-bridge.jpg" alt="tisno bridge" class="local-poi">
+                                        <p>
+                                            The Tisno bridge has exsisted in one form or another since the 18th century,
+                                            connecting the mainland and the island of Murter.
+                                            In the 1920s, a new version of the bridge was built which could retract and
+                                            let boats pass through the narrow strait to the other side of the island.
+                                            It was an old wooden bridge that served the purpose of the small town,
+                                            however, in the 1970s, Tito, the then leader of Yugoslavia decided to visit
+                                            Murter.
+
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +441,7 @@
         <div class="row">
             <div class="col-12 col-md-8 col-lg-6">
 
-                <!--code for responsive iframe taken from webpage "How to make Google Maps Embeds Responsive" from "https://www.labnol.org/internet/embed-responsive-google-maps/28333/"-->
+                <!--"How to make Google Maps Embeds Responsive" from "https://www.labnol.org/internet/embed-responsive-google-maps/28333/"-->
                 <div class="responsive-iframe">
 
                     <iframe
@@ -473,7 +482,7 @@
         </p>
         <div class="row justify-content-center">
             <div class="col-10 col-xl-8">
-                <form action="#" method="POST" id="contactform">
+                <form id="contactform">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input class="form-control" type="text" id="name" name="name" required>
@@ -514,11 +523,6 @@
 
     </section>
 
-    <div class="book-now">
-        <a class="btn btn-lg btn-warning"
-            href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=91444bd5-60d0-445c-9827-13eb474dabc3"
-            target="_blank">Book Now!</a>
-    </div>
 
     <!-- FOOTER  - Contact information and Social Media Links -->
 
@@ -528,24 +532,30 @@
                 <div class="row">
                     <div class="col-12 col-md-6 text-white">
                         <p class="footer-address">
-                        Villa Oliva, <span class="d-none d-md-inline"><br></span>
-                        Uska ulica 8, <span class="d-none d-md-inline"><br></span>
-                        22240 TISNO, <span class="d-none d-md-inline"><br></span>
-                        Croatia
-                    </p>
-                    <p class="footer-address">
-                        Tel: +385 91 505 0742 <span class="d-inline d-md-none">|</span><span class="d-none d-md-inline"><br></span>
-                        Email: vesna.forsek@gmail.com
-                    </p>
+                            Villa Oliva, <span class="d-none d-md-inline"><br></span>
+                            Uska ulica 8, <span class="d-none d-md-inline"><br></span>
+                            22240 TISNO, <span class="d-none d-md-inline"><br></span>
+                            Croatia
+                        </p>
+                        <p class="footer-address">
+                            Tel: +385 91 505 0742 <span class="d-inline d-md-none">|</span><span
+                                class="d-none d-md-inline"><br></span>
+                            Email: vesna.forsek@gmail.com
+                        </p>
                     </div>
                     <div class="col-12 col-md-6 my-auto">
                         <ul class="social-links">
-                            <li><a href="https://www.facebook.com/VillaOlivaTisno/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=80a89749-1784-4d59-9def-6d99eb9a6263" target="_blank"><i class="fab fa-airbnb"></i></a></li>
-                            <li><a href="https://www.instagram.com/explore/tags/tisno%F0%9F%87%AD%F0%9F%87%B7/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/VillaOlivaTisno/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=80a89749-1784-4d59-9def-6d99eb9a6263"
+                                    target="_blank"><i class="fab fa-airbnb"></i></a></li>
+                            <li><a href="https://www.instagram.com/explore/tags/tisno%F0%9F%87%AD%F0%9F%87%B7/"
+                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <div class="col-12 text-white text-center footer-copyright">Copyright 2020 <a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=91444bd5-60d0-445c-9827-13eb474dabc3">Villa Oliva</a></div>
+                    <div class="col-12 text-white text-center footer-copyright">Copyright 2020 <a
+                            href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=91444bd5-60d0-445c-9827-13eb474dabc3">Villa
+                            Oliva</a></div>
                 </div>
             </div>
         </div>

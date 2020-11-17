@@ -58,10 +58,9 @@ p {
 
 .hero-logo {
     width: 45%;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 20px;
     display: block;
-    margin: 0 auto;
 }
 
 .hero-text p {
@@ -106,10 +105,11 @@ p {
 
 /*-------------- AMENITIES -------- */
 
+
 .amenities-list {
     display: inline-block;
     list-style: none;
-    margin: 0 auto;
+    margin: 10 auto;
     padding: 0;
     width: 100%;
     font-size: 1.2rem;
@@ -198,14 +198,12 @@ p {
     display: inline-block;
 }
 
-/*-------------- BOOK NOW -------- */
-
-.book-now {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
+.local-poi {
+    width: 100%;
+    height: auto;
 }
+
+/*-------------- BOOK NOW -------- */
 
 .jumbotron {
     height: 100%;
@@ -273,7 +271,6 @@ footer {
     }
     .hero-image {
         margin: 0;
-        padding: 20px 0;
         height: 30vh;
         background-image: url("assets/img/hero-image_c.jpg");
         background-position: center;
@@ -292,7 +289,6 @@ footer {
     .social-links li {
         display: inline-block;
         text-align: center;
-        float: inherit;
         padding: 20px 20px 0 20px;
     }
     .footer-address {
