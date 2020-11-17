@@ -239,18 +239,30 @@ footer {
     margin-top: 20px;
 }
 
+.follow-us h5 {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
 .social-links {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
     vertical-align: middle;
+
 }
 
 .social-links li {
     display: inline-block;
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 20px;
     font-size: 2rem;
+}
+
+.social-links p {
+    font-size: 1rem;
+    color: white;
 }
 
 .fa-airbnb {
@@ -267,6 +279,13 @@ footer {
 
 .footer-copyright {
     margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .footer-address {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -298,9 +317,7 @@ footer {
         text-align: center;
         padding: 20px 20px 0 20px;
     }
-    .footer-address {
-        text-align: center;
-    }
+   
 }
 
 @media (max-width: 460px) {

@@ -40,11 +40,11 @@
 
             <div class="collapse navbar-collapse" id="navbartoggler">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#book_now">Book Now!</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link" href="#book_now">Book Now!</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -347,7 +347,7 @@
 
                                 <div id="tisno-bridge" class="collapse" aria-labelledby="headingone"
                                     data-parent="poi-accordion">
-                                    <div class="card-body">
+                                    <article class="card-body">
                                         <img src="assets/img/tisno-bridge.jpg" alt="tisno bridge" class="local-poi">
                                         <p>
                                             The Tisno bridge has exsisted in one form or another since the 18th century,
@@ -359,7 +359,7 @@
                                             Murter.
 
                                         </p>
-                                    </div>
+                                    </article>
                                 </div>
                             </div>
                             <div class="card">
@@ -374,10 +374,10 @@
                                 </div>
                                 <div id="tisno-kornati" class="collapse" aria-labelledby="headingtwo"
                                     data-parent="poi-accordion">
-                                    <div class="card-body">
+                                    <article class="card-body">
                                         <img src="assets/img/kornati-islands.jpg" alt="Kornati Islands"
                                             class="local-poi">
-                                    </div>
+                                    </article>
                                 </div>
                             </div>
                             <div class="card">
@@ -392,9 +392,9 @@
                                 </div>
                                 <div id="tisno-plitvice" class="collapse" aria-labelledby="headingthree"
                                     data-parent="poi-accordion">
-                                    <div class="card-body">
+                                    <article class="card-body">
                                         <img src="assets/img/plitvice.jpg" alt="Plitvice Lakes" class="local-poi">
-                                    </div>
+                                    </article>
                                 </div>
                             </div>
                         </div>
@@ -414,7 +414,7 @@
                         <h4>Directions to Villa Oliva</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-body">
+                    <article class="modal-body">
                         <h6><i class="fas fa-plane"></i> Flying in</h6>
                         <p>The nearest airport is the Zadar regional Airport which is about 60km away from Tisno.
                             Another airport would be the Split International Airport which is about 90km away.
@@ -427,7 +427,7 @@
                         <h6><i class="fas fa-car"></i> Driving</h6>
                         <p>Wherever you are in Croatia you can get to Tisno by going to the A6 motorway and then taking
                             the exit for Vodice / Tisno. Tisno is about 25 minutes drive from the motorway exit.</p>
-                    </div>
+                    </article>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
@@ -463,7 +463,7 @@
 
                     <iframe
                         src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=N2N0dGNxNjd1cm9mYjlwNzV0ajVnamJpMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
-                        style="border-width:0; border:0; overflow: hidden;" width="800" height="600" SameSite="Lax"></iframe>
+                        style="border-width:0; border:0; overflow: hidden;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div class="col-12 col-md-4 col-lg-6">
@@ -528,7 +528,7 @@
         <div class="row justify-content-center footer-row">
             <div class="col-9 col-xl-7">
                 <div class="row">
-                    <div class="col-12 col-md-6 text-white">
+                    <div class="col-12 col-lg-6 text-white">
                         <p class="footer-address">
                             Villa Oliva, <span class="d-none d-md-inline"><br></span>
                             Uska ulica 8, <span class="d-none d-md-inline"><br></span>
@@ -541,15 +541,19 @@
                             Email: vesna.forsek@gmail.com
                         </p>
                     </div>
-                    <div class="col-12 col-md-6 my-auto">
+                    <div class="col-12 col-lg-6 my-auto">
+                        <div class="d-none d-lg-inline follow-us">
+                            <h5>Follow Us</h5>
+                        </div>
                         <ul class="social-links">
                             <li><a href="https://www.facebook.com/VillaOlivaTisno/" target="_blank"><i
-                                        class="fab fa-facebook-f"></i></a></li>
+                                        class="fab fa-facebook-f"></i></a><p>Facebook</p></li>
                             <li><a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=80a89749-1784-4d59-9def-6d99eb9a6263"
-                                    target="_blank"><i class="fab fa-airbnb"></i></a></li>
+                                    target="_blank"><i class="fab fa-airbnb"></i></a><p>AirBnB</p></li>
                             <li><a href="https://www.instagram.com/explore/tags/tisno%F0%9F%87%AD%F0%9F%87%B7/"
-                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    target="_blank"><i class="fab fa-instagram"></i></a><p>Instagram</p></li>
                         </ul>
+                    
                     </div>
                     <div class="col-12 text-white text-center footer-copyright">Copyright 2020 <a
                             href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=91444bd5-60d0-445c-9827-13eb474dabc3">Villa
