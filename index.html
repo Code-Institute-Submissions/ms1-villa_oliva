@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="assets/logo/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -32,25 +30,23 @@
     <!--Navigation bar containing logo and nav links. The bar is sticky and will be fixed to top when scrolling -->
 
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#header"><img src="assets/logo/villaoliva_logo_small.png" id="logo-image"
-                alt="villa oliva logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggler">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#header"><img src="assets/logo/villaoliva_logo_small.png" id="logo-image"
+                    alt="villa oliva logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggler"
+                aria-controls="navbartoggler" aria-expanded="false" aria-labelledby="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbartoggler">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link"
-                        href="#gallery">Gallery</a></li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link"
-                        href="#amenities">Amenities</a></li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link"
-                        href="#location">Location</a></li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link"
-                        href="#book_now">Book Now!</a></li>
-                <li class="nav-item" data-toggle="collapse" data-target="#navbartoggler"><a class="nav-link"
-                        href="#contact">Contact</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbartoggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book_now">Book Now!</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -320,6 +316,8 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
+
+                <!-- <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Villa%20Oliva,%20Tisno,%20Croatia+(Villa%20Oliva)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Google Route Planner</a></div> -->
             </div>
 
         </div>
@@ -377,7 +375,25 @@
                                 <div id="tisno-kornati" class="collapse" aria-labelledby="headingtwo"
                                     data-parent="poi-accordion">
                                     <div class="card-body">
-                                        Kornati
+                                        <img src="assets/img/kornati-islands.jpg" alt="Kornati Islands"
+                                            class="local-poi">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingthree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                            data-target="#tisno-plitvice" aria-expanded="true"
+                                            aria-controls="tisno-plitvice">
+                                            Plitvice Lakes
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="tisno-plitvice" class="collapse" aria-labelledby="headingthree"
+                                    data-parent="poi-accordion">
+                                    <div class="card-body">
+                                        <img src="assets/img/plitvice.jpg" alt="Plitvice Lakes" class="local-poi">
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +463,7 @@
 
                     <iframe
                         src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=N2N0dGNxNjd1cm9mYjlwNzV0ajVnamJpMXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
-                        style="border-width:0; border:0; overflow: hidden;" width="800" height="600"></iframe>
+                        style="border-width:0; border:0; overflow: hidden;" width="800" height="600" SameSite="Lax"></iframe>
                 </div>
             </div>
             <div class="col-12 col-md-4 col-lg-6">
@@ -503,25 +519,6 @@
             </div>
         </div>
 
-
-
-
-        <!-- Modal to thank customers for sending a question in the form
-        <div class="modal fade" id="thankyouModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h3>Thank you for submitting your question</h3>
-                        <p>We really appreciate your question and we will ensure to get back to you as soon as possible.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
     </section>
 
 
@@ -562,17 +559,15 @@
         </div>
     </footer>
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
