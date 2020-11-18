@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Villa Oliva</title>
 </head>
 
@@ -34,7 +34,7 @@
             <a class="navbar-brand" href="#header"><img src="assets/logo/villaoliva_logo_small.png" id="logo-image"
                     alt="villa oliva logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggler"
-                aria-controls="navbartoggler" aria-expanded="false" aria-labelledby="Toggle navigation">
+                aria-expanded="false" aria-labelledby="navbartoggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -93,7 +93,7 @@
                                 <h2 class="modal-title">Villa Oliva</h2>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <article class="modal-body">
+                            <div class="modal-body">
                                 <img class="modal-photo" src="assets/img/vo_outside.jpg"
                                     alt="Villa Oliva photo of exterior">
                                 <p>
@@ -132,7 +132,7 @@
                                     at each end of
                                     the street and costs around 20 EUR per week.
                                 </p>
-                            </article>
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
@@ -204,11 +204,11 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#gallerycontrols" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true" aria-labelledby="gallerycontrols"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#gallerycontrols" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true" aria-labelledby="gallerycontrols"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -343,14 +343,14 @@
                                 <div class="card-header" id="headingone">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                                            data-target="#tisno-bridge" aria-expanded="true"
-                                            aria-controls="tisno-bridge">
+                                            data-target="#tisno-bridge" aria-expanded="true">
                                             Tisno bridge
                                         </button>
                                     </h2>
+                                    
                                 </div>
 
-                                <div id="tisno-bridge" class="collapse" aria-labelledby="headingone"
+                                <div id="tisno-bridge" class="collapse" 
                                     data-parent="#poi-accordion">
                                     <div class="card-body">
                                         <img src="assets/img/tisno-bridge.jpg" alt="tisno bridge" class="local-poi">
@@ -370,17 +370,22 @@
                                 <div class="card-header" id="headingtwo">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                                            data-target="#tisno-kornati" aria-expanded="true"
-                                            aria-controls="tisno-koranti">
+                                            data-target="#tisno-kornati" aria-expanded="true">
                                             Kornati
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="tisno-kornati" class="collapse" aria-labelledby="headingtwo"
+                                <div id="tisno-kornati" class="collapse"
                                     data-parent="#poi-accordion">
                                     <div class="card-body">
                                         <img src="assets/img/kornati-islands.jpg" alt="Kornati Islands"
                                             class="local-poi">
+                                        <p>
+                                            Kornati national park was established in 1980 and it comprises of 89 of the
+                                            around 140 islands in the Kornati archipelago. The national park is easiy
+                                            accessible by boat from Tisno or any of the sorrounding towns such as Vodice
+                                            and Sibenik.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -388,16 +393,20 @@
                                 <div class="card-header" id="headingthree">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                                            data-target="#tisno-plitvice" aria-expanded="true"
-                                            aria-controls="tisno-plitvice">
+                                            data-target="#tisno-plitvice" aria-expanded="true">
                                             Plitvice Lakes
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="tisno-plitvice" class="collapse" aria-labelledby="headingthree"
+                                <div id="tisno-plitvice" class="collapse"
                                     data-parent="#poi-accordion">
                                     <div class="card-body">
                                         <img src="assets/img/plitvice.jpg" alt="Plitvice Lakes" class="local-poi">
+                                        <p>
+                                            Plitvice Lakes National Park is located in the inland county of Lika and
+                                            is about an hour drive from Tisno. There are day trips available to the
+                                            National Park which leave from Tisno daily during the summer.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -418,20 +427,20 @@
                         <h4>Directions to Villa Oliva</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <article class="modal-body">
-                        <h6><i class="fas fa-plane"></i> Flying in</h6>
+                    <div class="modal-body">
+                        <h6><i class="fas fa-plane"></i><strong> Flying in</strong></h6>
                         <p>The nearest airport is the Zadar regional Airport which is about 60km away from Tisno.
                             Another airport would be the Split International Airport which is about 90km away.
                             <br>Both airports are very well connected by bus to the Zadar or Split city centre. From
                             there you should get a connecting service to Tisno.
                         </p>
-                        <h6><i class="fas fa-bus"></i> Bussing it</h6>
+                        <h6><i class="fas fa-bus"></i><strong> Bussing it</strong></h6>
                         <p>Busses are the best and fastest way to get arround Croatia. Every town has a bus service and
                             the busses are usually on time and very comfortable.</p>
-                        <h6><i class="fas fa-car"></i> Driving</h6>
+                        <h6><i class="fas fa-car"></i><strong> Driving</strong></h6>
                         <p>Wherever you are in Croatia you can get to Tisno by going to the A6 motorway and then taking
                             the exit for Vodice / Tisno. Tisno is about 25 minutes drive from the motorway exit.</p>
-                    </article>
+                        </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
@@ -498,7 +507,7 @@
         </h1>
         <hr>
         <p class="p-center">
-            If you have any questions or need any information about Villa Oliva, Tisno, Croatia or anything,
+            If you have any questions or need any information about Villa Oliva, the town Tisno or Croatia,
             please let us know using the form below and we will get back to you in the earliest possible time.
         </p>
         <div class="row justify-content-center">
@@ -506,16 +515,23 @@
                 <form id="contactform">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input class="form-control" type="text" id="name" name="name" required>
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Full Name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
                     </div>
-
                     <div class="form-group">
-                        <label for="query">Question</label>
-                        <textarea class="form-control" rows="4" id="query" name="query"></textarea>
+                        <label for="list">Type of query</label>
+                        <select class="form-control" name="querytype" id="list">
+                            <option value="1">Question</option>
+                            <option value="2">Comment</option>
+                            <option value="3">Reservation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Comment</label>
+                        <textarea class="form-control" rows="4" id="query" name="query" placeholder="Please place your comment here"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
 
@@ -552,15 +568,15 @@
                         <ul class="social-links">
                             <li><a href="https://www.facebook.com/VillaOlivaTisno/" target="_blank"><i
                                         class="fab fa-facebook-f"></i></a>
-                                <p>Facebook</p>
+                                <p class="d-none d-sm-block">Facebook</p>
                             </li>
                             <li><a href="https://www.airbnb.ie/rooms/1251040?s=67&unique_share_id=80a89749-1784-4d59-9def-6d99eb9a6263"
                                     target="_blank"><i class="fab fa-airbnb"></i></a>
-                                <p>AirBnB</p>
+                                <p class="d-none d-sm-block">AirBnB</p>
                             </li>
                             <li><a href="https://www.instagram.com/explore/tags/tisno%F0%9F%87%AD%F0%9F%87%B7/"
                                     target="_blank"><i class="fab fa-instagram"></i></a>
-                                <p>Instagram</p>
+                                <p class="d-none d-sm-block">Instagram</p>
                             </li>
                         </ul>
 

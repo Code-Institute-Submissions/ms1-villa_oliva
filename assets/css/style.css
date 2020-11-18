@@ -13,7 +13,7 @@ section {
 h1, h5 {
     text-align: center;
     margin-top: 20px;
-    font-family: 'Cinzel'. serif;
+    font-family: 'Cinzel', serif;
 }
 
 p {
@@ -39,6 +39,8 @@ p {
     max-width: 100%;
     height: auto;
 }
+
+
 
 /*-------------- HEADER & NAVIGATION -------- */
 
@@ -102,6 +104,7 @@ p {
     border-radius: 20px;
 }
 
+
 /*-------------- GALLERY -------- */
 
 .carousel-container, .carousel-inner, .carousel-item {
@@ -116,7 +119,7 @@ p {
 .amenities-list {
     display: inline-block;
     list-style: none;
-    margin: 10 auto;
+    margin: 10px auto;
     padding: 0;
     width: 100%;
     font-size: 1.2rem;
