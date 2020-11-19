@@ -16,6 +16,40 @@ The website is designed as a single scrolling page where all the information is 
 The website is broken down into several sections providing specific information for the users. Users can navigate to each section using the sticky navigation bar at the top of the page. Each link on the navigation bar jumps to the corresponding section in the page. 
 The overall design of the website is very simple with few complications. Black text on a white background with a little bit of color and images to break up the different sections. The idea is to keep the page and design as elegant as possible. 
 
+## User Stories
+
+- As a user I expect to be able to quickly find the information I need
+
+    - The website is organized as a single scrollable page with a logical flow of information. 
+
+- As a user I want to see clean design
+
+    - The design has a very clean design using a white background and black text. A little bit of color is used to emphasize rather than distract. 
+
+- As a user I want to easily navigate the page
+
+    - The navigation bar sticks to the top of the page and follows the user along as they scroll through the page. This means that at any time users can navigate to any part of the page without having to scroll to the top. 
+
+- As a user I want to be able to book Villa Oliva
+
+    - There is a "Book Now" section where users can check availability. There is also a "Book Now" button which opens the Villa Oliva AirBnB page in a new window / tab. 
+
+- As a user I want to view the page on all screen sizes
+
+    - The website is designed as a responsive website which scales depending on the size of the screen it is viewed on. 
+
+
+
+## Wireframes
+
+[Homepage Wireframe](assets/readme/wireframe_home_page.png)
+
+[History - Sample Page Wireframe](assets/readme/wireframe_history.png)
+
+The wireframes were designed at the begining of the project. The original concept was to have multiple pages for each of the sections on the webpage which would provide more information. However, to make browsing simpler and to allow users better and quicker access to the information, a single page design was chosen. Therefore, the wireframes do not completely match the finished website. 
+
+# Features
+
 ## Villa Oliva
 
 This section provides information on the house, its history and what guests can expect when visiting. A small excerpt is available on the main page and if potential guests are interested in additional information about the house, they can click "read more" which will open up a modal with additinal information and a photo of the outside of the building. 
@@ -47,22 +81,16 @@ If visitors to the site have any questions or comments, the "Contact Us" section
 The "Contact Us" section is a form where users are expected to provide a name, email, define the type of query and write a full question or comment. 
 The form requires the user to input a name and email. The fields validate whether a user has provided information and in the case of emails, whether they have formatted the email correctly. 
 
-## User Stories
-
-
-
-
-## Wireframes
-
-[Homepage Wireframe](assets/readme/wireframe_home_page.png)
-
-[History - Sample Page Wireframe](assets/readme/wireframe_history.png)
-
-
-
-# Features
-
 # Technologies Used
+
+## HTML 
+Hypertext Markup Language (HTML) is the basic building block of this website. Used for the basic design and structure of the page. 
+
+## CSS 
+Cascading Style Sheets (CSS) is used to style the design elements. 
+
+## Bootstrap 4
+Bootstrap is used 
 
 # Testing
 
