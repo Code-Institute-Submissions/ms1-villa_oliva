@@ -52,7 +52,7 @@ p {
     margin: 0;
     padding: 0;
     height: 55vh;
-    background-image: url("assets/img/hero-image_c.jpg");
+    background-image: url("../img/hero-image_c.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -301,7 +301,6 @@ footer {
     .hero-image {
         margin: 0;
         height: 30vh;
-        background-image: url("assets/img/hero-image_c.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
