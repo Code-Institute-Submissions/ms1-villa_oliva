@@ -81,21 +81,115 @@ If visitors to the site have any questions or comments, the "Contact Us" section
 The "Contact Us" section is a form where users are expected to provide a name, email, define the type of query and write a full question or comment. 
 The form requires the user to input a name and email. The fields validate whether a user has provided information and in the case of emails, whether they have formatted the email correctly. 
 
+
+## Features left to implement
+At the moment the book now button links to an external website (AirBnB), however, in the future the plan is to create a booking engine directly in the website. 
+
 # Technologies Used
 
-## HTML 
+## [HTML](https://www.w3.org/standards/webdesign/htmlcss) 
 Hypertext Markup Language (HTML) is the basic building block of this website. Used for the basic design and structure of the page. 
 
-## CSS 
-Cascading Style Sheets (CSS) is used to style the design elements. 
+## [CSS](https://www.w3.org/standards/webdesign/htmlcss) 
+Cascading Style Sheets (CSS) is used to style the design elements and media queries are used to make the site responsive.  
 
-## Bootstrap 4
-Bootstrap is used 
+## [Bootstrap 4](https://getbootstrap.com/)
+Bootstrap is used to make the website responsive on multiple screen sizes. 
+
+## [Visual Studio Code](https://code.visualstudio.com/)
+Microsoft Visual Studio Code is an Integrated Development Environment (IDE) used to develop software. 
+
+## [GTmetrix](https://gtmetrix.com/)
+GTmetrix is an online service used to evaluate the load time and performance of websites. 
+
+## [Pixabay](https://pixabay.com/)
+Pixabay is an online repository of free images. 
+
+## [Google Fonts](https://fonts.google.com/)
+Google Fonts is a repository of free to use fonts. The fonts used in this project are 'Cinzel' and 'Quicksand'
+
+## [FontAwesome](https://fontawesome.com/)
+Fontawesome is a vector icon repository. In this project fontawesome icons are used in the "Amenities" section to ilustrate the amenities available and in the "Directions" modal to emphasize the transport options. 
+
+## [Paint.net](https://www.getpaint.net/)
+Paint(dot)net is a free photo editing software. In this project it was used to style and resize images. 
+
+## [Google Chrome](https://www.google.com/intl/en_ie/chrome/)
+Google Chrome is a web browser developed by Google Inc. In this project Google Chrome was used extensivelly along with Microsoft Edge to preview and test the project with the chrome developer tools.
+
+## [Microsoft Edge](https://www.microsoft.com/en-us/edge)
+Microsoft Edge is a web browser developed by Microsoft. In this project Microsoft Edge was used extensivelly along with Google Chrome to preview and test the project with the chrome developer tools.
+
 
 # Testing
 
+## Performance testing
+To test the performance and loading time of the website, the project was submitted to GTmetrix. The score returned was 100% performance. 
+
+![GTmetrix](assets\readme\gtmetrix_performance.jpg)
+
+## Testing Methodology
+The site was tested on multiple browsers and physical devices. The following methodology was applied:
+
+1. Do all links work?
+    - Click all links on the page to ensure they are not broken
+
+2.  Is the navigation bar responsibe and "sticks" to the top of the screen?
+    - The navigation bar should collapse into a toggle button on smaller screens and expand on larger screens. It should also, stick to the top of the viewport when scrolling. 
+
+3. Do all modals open and have close buttons?
+    - Test all modals
+
+4. Does the form work as intended?
+    - Do all inputs set to required work and does the email field require the user to format the input as an email address. 
+
+5. Does the "book now" button work?
+    - Does it open up the Villa Oliva AirBnB page in a new tab / window? 
+
+6. Does the gallery work?
+    - Are all photos displayed
+    - Can the user navigate through the photos
+
+7. Is the page responsive?
+    - Does the page and all elements within it resize depending on screen size
+
+## Browser Testing
+
+The project was tested in several browsers and the results are displayed in the table below. The browsers used are in the first column and the methodology is in the first row (in order as above)
+
+|   	| 1.	| 2.  	| 3.  	| 4.  	| 5.  	| 6.  	| 7.  	|
+|---	|---	|---	|---	|---	|---	|---	|---	|
+|Google Chrome   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes  	|
+|Microsoft Edge   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|
+|Safari   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|
+|Mozilla Firefox   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|
+|Opera   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|
+|Internet Explorer   	|Yes   	|**No**   	|Yes   	|Yes   	|Yes   	|Yes   	|Yes   	|
+
+
+All testing was successfull, except the navigation bar on Internet Explorer. 
+The navigation bar does not "stick" to the top of the viewport when scrolling. It is fully functional and responsive, but when the user scrolls past the navigation bar, it does not follow the user down the page. 
+
+### IE Sticky bug
+When the bug was discovered, I researched the web and found out I would need to use javascript to correct this. Due to not being proficient in javascript and the bug not having much impact on the user experience over all, I decided to keep the fix for another day. This is unlikely to affect many people so the cost of fixing it is higher than the value at this time. 
+
+## Device testing
+The website was also tested on multiple devices both physical and virtual (using Chrome and Edge developer tools)
+
+| Device   	| Type  	| 1.  	| 2.  	| 3.  	| 4.  	| 5.  	| 6.  	| 7.    |
+|---	|---	|---	|---	|---	|---	|---	|---	|---    |
+|Asus Zenbook   |Physical Laptop	| Yes  	| Yes  	| Yes  	|  Yes 	| Yes  	| Yes  	| Yes      |
+|Samsung S10e   	|Physical Mobile Phone   	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
+|OnePlus Nord   	|Physical Mobile Phone   	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
+|Samsung SM-P 205   	| Physical tablet   	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
+|iPhone 5   	| Virtual - Chrome Dev Tools  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
+|iPad   	| Virtual - Chrome Dev Tools  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
+|iPad Mini  	| Virtual - Chrome Dev Tools  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
+|iPad Pro  	| Virtual - Chrome Dev Tools  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
 
 # Deployment
+
+**Villa Oliva** is deployed and hosted on GitHub Pages. 
 
 # Credits
 
