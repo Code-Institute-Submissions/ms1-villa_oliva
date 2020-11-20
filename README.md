@@ -193,6 +193,11 @@ The website was also tested on multiple devices both physical and virtual (using
 |iPad Mini  	| Virtual - Chrome Dev Tools  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
 |iPad Pro  	| Virtual - Chrome Dev Tools  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes  	| Yes      |
 
+## Validation
+HTML code was successfully validated using the [W3C Markup Validation Service](https://validator.w3.org/) and returned no errors. 
+CSS code was successfully validated using the [Jigsaw W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and returned no errors.
+
+
 # Deployment
 
 [**Villa Oliva**](https://bowets.github.io/ms1-villa_oliva/) is deployed and hosted on GitHub Pages. 
