@@ -99,6 +99,9 @@ Bootstrap is used to make the website responsive on multiple screen sizes.
 ## [Visual Studio Code](https://code.visualstudio.com/)
 Microsoft Visual Studio Code is an Integrated Development Environment (IDE) used to develop software. 
 
+## [Git](https://git-scm.com/)
+Git was used alongside Visual Studio Code as a local version control platform. All commits were regularly pushed to GitHub. 
+
 ## [GTmetrix](https://gtmetrix.com/)
 GTmetrix is an online service used to evaluate the load time and performance of websites. 
 
@@ -119,6 +122,9 @@ Google Chrome is a web browser developed by Google Inc. In this project Google C
 
 ## [Microsoft Edge](https://www.microsoft.com/en-us/edge)
 Microsoft Edge is a web browser developed by Microsoft. In this project Microsoft Edge was used extensivelly along with Google Chrome to preview and test the project with the chrome developer tools.
+
+## [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables#)
+The Markdown Table Generator was used to generate the tables in the readme to display the texting matrix. 
 
 
 # Testing
@@ -189,9 +195,44 @@ The website was also tested on multiple devices both physical and virtual (using
 
 # Deployment
 
-**Villa Oliva** is deployed and hosted on GitHub Pages. 
+[**Villa Oliva**](https://bowets.github.io/ms1-villa_oliva/) is deployed and hosted on GitHub Pages. 
+
+The project was developed using Visual Studio Code. Git was used as a local version control platform. All commits were regularly pushed to the GitHub repository. 
+
+Any changes made on the project were pushed to Github and changes could have been seen immediately on the live site on Github pages. 
+
+
+## Local deployment
+To access this poject locally, download the project file by clicking on the green "Code" button at the top of the page.
+<br>![Code button](assets/readme/readme_code_green.jpg)
+
+You can either download a ZIP file containing the project and work on it locally or you can copy the link in the dropdown menu and pull the repository into your IDE of choice. 
 
 # Credits
+I want to credit my mentor Ignatius Ukwuoma who guided me through this project and always offered very helpful advice. 
+I also want to give credit to the Code Institute Slack groups from where I was able to find answers to some of the problems I was trying to solve. 
+
+## Inspiration
+The inspiration for this project is Villa Oliva, a real world business operated by my family in Croatia. The aim of the project is to increase its online presence and convert potential visitors into return guests. 
+
+## Media
+The Kornati Islands image is a free image by [k559](https://pixabay.com/users/k559-3647966/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1785556) on [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1785556)
+
+The Plitvice Lakes image is a free image by [jimmmyimi](https://pixabay.com/users/jimmyimi-4537454/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2061116) on [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1785556)
+
+The [olive branch](assets/img/olive-branch-right.jpg) images are royalty free images from [clipartmax](https://www.clipartmax.com/middle/m2H7i8N4m2G6A0i8_tree-branch-clip-art-at-clipartimage-olive-branch-clipart-black-and-white/)
+
+All other images are my own or owned by Villa Oliva.
+
+## Content
+The content for the "Points of Interest" section was paraphrased from [wikipedia](https://www.wikipedia.org/)
+
+All other content is original. 
+
+## Code credits
+The code to create the google map and google calendar iframse responsive was taken from an online article [How to Make Google Maps Embeds Responsive](https://www.labnol.org/internet/embed-responsive-google-maps/28333/)
+
+
 
 
 
