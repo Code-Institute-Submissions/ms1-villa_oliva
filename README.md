@@ -195,7 +195,7 @@ The website was also tested on multiple devices both physical and virtual (using
 
 ## Validation
 HTML code was successfully validated using the [W3C Markup Validation Service](https://validator.w3.org/) and returned no errors. 
-CSS code was successfully validated using the [Jigsaw W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and returned no errors.
+<br>CSS code was successfully validated using the [Jigsaw W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and returned no errors.
 
 
 # Deployment
