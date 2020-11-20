@@ -6,7 +6,7 @@ The idea for this website is to promote Villa Oliva, a 18th century house locate
 
 # UX
 
-![Responsive design](assets\readme\responsive-screenshot.png)
+![Responsive design](assets/readme/responsive-screenshot.png)
 
 This project is aimed at potential guests of Villa Oliva who are looking to book a house to spend their summer holidays. The house itself is designed with flow in mind and there is very little, if any clutter. This webpage tries to emulate the same design principles. The website is designed as a single scrolling page designed for mobile first. Villa Oliva relies mostlly on word of mouth advertising so creating a mobile first website was important to facilitate sharing links through social media and apps such as WhatsApp and Instagram. Since these are mobile only apps, the website must be optimized for this audience. 
 
@@ -126,7 +126,7 @@ Microsoft Edge is a web browser developed by Microsoft. In this project Microsof
 ## Performance testing
 To test the performance and loading time of the website, the project was submitted to GTmetrix. The score returned was 100% performance. 
 
-![GTmetrix](assets\readme\gtmetrix_performance.jpg)
+![GTmetrix](assets/readme/gtmetrix_performance.jpg)
 
 ## Testing Methodology
 The site was tested on multiple browsers and physical devices. The following methodology was applied:
